@@ -27,7 +27,7 @@ const Sidebar = () => {
   };
 
   const menuItems = [
-    // COMMON - All Roles
+    
     {
       name: 'Dashboard',
       href: '/dashboard',
@@ -36,7 +36,7 @@ const Sidebar = () => {
       description: 'Overview and analytics'
     },
 
-    // ADMIN ONLY - System Administrator
+    
     {
       name: 'User Management',
       href: '/users',
@@ -59,7 +59,7 @@ const Sidebar = () => {
       description: 'System configuration and administration'
     },
 
-    // MANAGER - Operations Manager
+    
     {
       name: 'Inventory Management',
       href: '/inventory',
@@ -82,7 +82,7 @@ const Sidebar = () => {
       description: 'Assign and manage tasks for staff'
     },
 
-    // STAFF - Operations Staff
+   
     {
       name: 'Stock Management',
       href: '/stock',
@@ -106,7 +106,7 @@ const Sidebar = () => {
       ]
     },
 
-    // SETTINGS & UTILITIES - Moved to Bottom
+    
     {
       name: 'Profile Settings',
       href: '/profile',
