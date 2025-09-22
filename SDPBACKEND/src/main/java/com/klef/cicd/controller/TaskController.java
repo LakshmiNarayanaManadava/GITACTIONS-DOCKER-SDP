@@ -28,7 +28,7 @@ public class TaskController {
     @Autowired
     private TaskService taskService;
 
-    // Create a new task
+    
     @PostMapping
     public ResponseEntity<?> createTask(@RequestBody Task task, 
                                        @RequestParam String createdBy, 
@@ -41,7 +41,7 @@ public class TaskController {
         }
     }
 
-    // Get all tasks (Admin only)
+   
     @GetMapping
     public ResponseEntity<?> getAllTasks() {
         try {
@@ -52,7 +52,7 @@ public class TaskController {
         }
     }
 
-    // Get tasks assigned to a specific user
+    
     @GetMapping("/assigned/{username}")
     public ResponseEntity<?> getTasksByAssignedUser(@PathVariable String username) {
         try {
@@ -63,7 +63,7 @@ public class TaskController {
         }
     }
 
-    // Get tasks created by a specific user
+    
     @GetMapping("/created/{username}")
     public ResponseEntity<?> getTasksByCreatedUser(@PathVariable String username) {
         try {
@@ -74,7 +74,7 @@ public class TaskController {
         }
     }
 
-    // Get task by ID
+    
     @GetMapping("/{id}")
     public ResponseEntity<?> getTaskById(@PathVariable Long id) {
         try {
@@ -89,7 +89,7 @@ public class TaskController {
         }
     }
 
-    // Update task
+    
     @PutMapping("/{id}")
     public ResponseEntity<?> updateTask(@PathVariable Long id, 
                                        @RequestBody Task taskDetails,
@@ -102,7 +102,7 @@ public class TaskController {
         }
     }
 
-    // Delete task
+    
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteTask(@PathVariable Long id, @RequestParam String username) {
         try {
@@ -113,7 +113,7 @@ public class TaskController {
         }
     }
 
-    // Get overdue tasks for a user
+    
     @GetMapping("/overdue/{username}")
     public ResponseEntity<?> getOverdueTasks(@PathVariable String username) {
         try {
@@ -124,7 +124,7 @@ public class TaskController {
         }
     }
 
-    // Get task statistics for a user
+    
     @GetMapping("/stats/{username}")
     public ResponseEntity<?> getTaskStats(@PathVariable String username) {
         try {
