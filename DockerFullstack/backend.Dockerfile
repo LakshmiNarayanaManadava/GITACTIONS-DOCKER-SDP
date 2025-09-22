@@ -9,6 +9,7 @@ COPY pom.xml ./
 
 COPY src ./src
 
+
 RUN ./mvnw clean package -DskipTests
 
 # Stage 2: Run the app
