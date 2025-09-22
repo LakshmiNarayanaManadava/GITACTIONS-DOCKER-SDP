@@ -18,7 +18,7 @@ services:
       context: ./SDPBACKEND
       dockerfile: ../DockerFullstack/backend.Dockerfile
     ports:
-      - "2006:2006"
+      - "2006:2000"
     
     depends_on:
       - mysqldb
